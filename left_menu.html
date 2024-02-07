@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>연세의료원 Publising 코딩진행표</title>
+<link rel="stylesheet" href="/publishing/coding_list/guide/base.css">
+<script src="/publishing/coding_list/js/vendors/jquery-2.2.4.min.js"></script>
+<script src="/publishing/coding_list/guide/dtree.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<h1 class="titH1"><span>연세의료원</span></h1>
+	<div class="status">
+		<h2>페이지 작업 상태</h2>
+		<ol>
+			<li><span class="t-ing">작업중</span></li>
+			<li><span class="t-modify">수정</span></li>
+			<li><span class="t-confirm">완료(개발가능)</span></li>
+		</ol>
+	</div>
+	<div class="dtree-wrap">
+		<p><a href="javascript: aa.openAll();"><img src="/publishing/coding_list/guide/images/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: aa.closeAll();"><img src="/publishing/coding_list/guide/images/btn_collapse.gif" alt="Collapse All" /></a></p>
+		<script type="text/javascript">
+			var tree = {
+				'WSG': {
+					'업무 가이드': {
+						'기본가이드': ['/publishing/coding_list/guide/html/guide.html', '', 'mainFrame'],
+						'상세규칙': ['/publishing/coding_list/guide/html/guide_markup.html', '', 'mainFrame'],
+					},
+					'퍼블리싱 가이드': {
+						'전체 공통': ['/publishing/coding_list/guide/html/guide_etc.html', '', 'mainFrame'],
+						'폰트': ['/publishing/coding_list/guide/html/guide_font.html', '', 'mainFrame'],
+						'버튼 / 탭': ['/publishing/coding_list/guide/html/guide_btn.html', '', 'mainFrame'],
+						'입력서식': ['/publishing/coding_list/guide/html/guide_form.html', '', 'mainFrame'],
+						'테이블': ['/publishing/coding_list/guide/html/guide_table.html', '', 'mainFrame'],
+						'알림 / 확인 메세지': ['/publishing/coding_list/guide/html/guide_msg.html', '', 'mainFrame'],
+					}
+				}
+			};
+
+			var aa = new dTree('aa', tree);
+			document.write(aa);
+		</script>
+	</div>
+
+	<div class="dtree-wrap">
+		<p><a href="javascript: bb.openAll();"><img src="/publishing/coding_list/guide/images/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: bb.closeAll();"><img src="/publishing/coding_list/guide/images/btn_collapse.gif" alt="Collapse All" /></a></p>
+		<script type="text/javascript">
+			var tree2 = {
+				'유형': {
+					'템플릿': {
+						'템플릿 유형1': ['/publishing/coding_list/guide/html/guide_layout.html', '', 'mainFrame']
+					},
+					'컴포넌트': {
+						'컴포넌트 유형1': ['/publishing/coding_list/guide/html/guide_component.html', '', 'mainFrame']
+					}
+				}
+			};
+
+			var bb = new dTree('bb', tree2);
+			document.write(bb);
+		</script>
+	</div>
+
+	<div class="dtree-wrap">
+		<p><a href="javascript: cc.openAll();"><img src="/publishing/coding_list/guide/images/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: cc.closeAll();"><img src="/publishing/coding_list/guide/images/btn_collapse.gif" alt="Collapse All" /></a></p>
+		<script type="text/javascript">
+			var tree3 = {
+				'페이지': {
+					'병원': {
+						'페이지1': ['/publishing/coding_list/guide/html/guide_layout.html', '', 'mainFrame']
+					},
+					'대학': {
+						'페이지2': ['/publishing/coding_list/guide/html/guide_layout.html', '', 'mainFrame']
+					}
+				}
+			};
+
+			var cc = new dTree('cc', tree3);
+			document.write(cc);
+		</script>
+	</div>
+
+</div>
+</body>
+</html>
+
+
